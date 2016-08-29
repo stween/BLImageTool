@@ -82,7 +82,8 @@ NSString *const gifRangeValue = @"bytes=6-9";
     [sessionDownLoadTask resume];
 }
 
-
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*国外一个程序写的*/
 CGSize pngImageSizeWithHeaderData(NSData *data){
     int w1 = 0, w2 = 0, w3 = 0, w4 = 0;
     [data getBytes:&w1 range:NSMakeRange(0, 1)];
@@ -135,6 +136,8 @@ CGSize jpgImageSizeWithHeaderData(NSData *data){
         return CGSizeZero;
     }
 }
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 CGSize gifImageSizeWithHeaderData(NSData *data){
     short w1 = 0, w2 = 0;

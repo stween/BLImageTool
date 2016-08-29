@@ -49,8 +49,11 @@ eg:
   
   
  #import "BLImage.h"
+ 
  NSString *jpgPicStr = @"http://ww3.sinaimg.cn/thumbnail/673c0421jw1e9a6au7h5kj218g0rsn23.jpg";
+ 
  NSString *pngPicStr = @"http://uploadpic.55.la/upload/temp/2016/07/12/16/42809637016487.png";
+ 
  NSString *gifPicStr = @"http://ww3.sinaimg.cn/mw690/60d02b59jw1evjnbthyipg20go09ehe2.gif";
  
  UIView *placeHoldView = [[UIView alloc]init];
@@ -67,6 +70,8 @@ eg:
  } andFinishedDown:^(NSData *picData) {
      NSLog(@"%@",picData);
  }]];
+ 
+ 
  
  
  
